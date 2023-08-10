@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript assignment week 4</title>
+	<link href="assest/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="core/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<div class="container">
+		
+		<h1>STUDENTS GRADE SHEET</h1>
+		<div class="row bud">
+			<div class="col col-md-4">
+				<div class="">
+					<h2>Subject</h2>
+				</div>
+				<div class="subjects">
+					<p class="eng">English:</p>
+					<p class="mat">Mathematics:</p>
+					<p class="phy">Physics:</p>
+					<p class="che">Chemistry:</p>
+					<p class="bio">Biology:</p>
+				</div>
+				<button class="btn btn-danger text-light" onclick="results()">Get Result!</button>
+				<h2 >TOTAL:</h2>
+				<p>Average:</p>
+				<p>Remark:</p>
+			</div>
+
+			<div class="col col-md-4">
+				<div>
+					<h2>Score</h2>
+				</div>
+				<div class="scores">
+					<form>
+						<p><input type="number" name="num" id="en" class="form-control b" oninput="ens()"></p>
+						<p><input type="number" name="num" id="ma" class="form-control b" oninput="mas()"></p>
+						<p><input type="number" name="num" id="ph" class="form-control b" oninput="phs()"></p>
+						<p><input type="number" name="num" id="ch" class="form-control b" oninput="chs()"></p>
+						<p><input type="number" name="num" id="bi" class="form-control b" oninput="bis()"></p>
+					</form>
+					<h2 id="total"></h2>
+					<p  id="average"></p>
+					<p  id="remark"></p>
+				</div>
+			</div>
+
+			<div class="col col-md-4">
+				<div class="">
+					<h2>Grade</h2>
+				</div>
+				<div class="scores">
+					<form>
+						<p><input type="text" name="text" id="enl" disabled class="form-control"></p>
+						<p><input type="text" name="text" id="mal" disabled class="form-control"></p>
+						<p><input type="text" name="text" id="phl" disabled class="form-control"></p>
+						<p><input type="text" name="text" id="chl" disabled class="form-control"></p>
+						<p><input type="text" name="text" id="bil" disabled class="form-control"></p>
+					</form>
+					<p id="emoji"></p>
+				</div>
+			</div>
+
+		</div>
+
+
+
+
+	</div>
+
+
+	<script type="text/javascript" src="core/main.js"></script>
+</body>
+</html>
